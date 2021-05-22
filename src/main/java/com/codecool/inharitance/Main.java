@@ -5,7 +5,9 @@ public class Main {
         System.out.println("Hello, world :)");
         Bicykle bicykle = new Bicykle(90, 45, 5);
         MountainBike mountainBike = new MountainBike(90, 45, 5);
+        TriathlonBike triathlonBike = new TriathlonBike(90, 55, 3);
         bicykle.go();
         mountainBike.go();
+        triathlonBike.go();
     }
 }
