@@ -23,5 +23,8 @@ public class Main {
         triathlonBike.go(33);
         mountainBike.go(33);
         triathlonBike.printPosition();
+
+        Util.printBikeName(triathlonBike);
+        
     }
 }
