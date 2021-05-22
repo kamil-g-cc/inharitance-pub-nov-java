@@ -5,6 +5,8 @@ public class Bicykle {
     public int gear;
     public int speed;
 
+    private final Position position;
+
     private String name;
 
     public Bicykle(int startCadence, int startSpeed, int startGear){
@@ -12,10 +14,21 @@ public class Bicykle {
         speed = startSpeed;
         cadence = startCadence;
         name = "Rower";
+        position = new Position(0, 0);
+        position.setPosition(2, 3);
+        //position = new Position(3, 3);
     }
 
     public String getName() {
         return name;
+    }
+
+    public void printPosition(){
+        if(position == null){
+            System.out.println("sorry, I don't have position set yet");
+        } else {
+            position.printPosition();
+        }
     }
 
     public void setName(String name){

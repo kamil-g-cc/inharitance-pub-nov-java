@@ -8,6 +8,10 @@ public class TriathlonBike extends Bicykle{
         setName("Rower triathlonowy");
     }
 
+    public boolean getHasLemondka(){
+        return hasLemondka;
+    }
+
     @Override
     public void go() {
         System.out.println("ziuuuuuuuuuuuuu");

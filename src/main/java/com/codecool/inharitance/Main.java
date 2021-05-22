@@ -6,6 +6,12 @@ public class Main {
         Bicykle bicykle = new Bicykle(90, 45, 5);
         MountainBike mountainBike = new MountainBike(90, 45, 5);
         TriathlonBike triathlonBike = new TriathlonBike(90, 55, 3);
+
+        Bicykle anAnotherBicykle = new TriathlonBike(90, 45, 5);
+
+        System.out.println("to jest wartosc z tego uniwersalnego/another Bike'a: " +((TriathlonBike) anAnotherBicykle).getHasLemondka());
+
+
         bicykle.go();
         System.out.println(bicykle.getName());
         mountainBike.go();
@@ -15,5 +21,7 @@ public class Main {
         triathlonBike.go("siuuuuu");
         triathlonBike.go("si", "uuuuuuuuuuuuuuuu");
         triathlonBike.go(33);
+        mountainBike.go(33);
+        triathlonBike.printPosition();
     }
 }
