@@ -25,4 +25,20 @@ public class Bicykle {
     public void go(){
         System.out.println("ziuu");
     }
+
+    public void go(String alternativeSound){
+        System.out.println(alternativeSound);
+    }
+
+    public String go(String prefixOfAlternativeSound, String postfixOfAlternativeSound) {
+        return prefixOfAlternativeSound + postfixOfAlternativeSound;
+    }
+
+    public void go(int howManyUs){
+        String sound = "si";
+        for(int i = 0 ; i< howManyUs; i++){
+            sound+="u";
+        }
+        System.out.println(sound);
+    }
 }

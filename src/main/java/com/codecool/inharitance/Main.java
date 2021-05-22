@@ -12,5 +12,8 @@ public class Main {
         System.out.println(mountainBike.getName());
         triathlonBike.go();
         System.out.println(triathlonBike.getName());
+        triathlonBike.go("siuuuuu");
+        triathlonBike.go("si", "uuuuuuuuuuuuuuuu");
+        triathlonBike.go(33);
     }
 }
