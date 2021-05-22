@@ -5,6 +5,8 @@ public final class MountainBike extends Bicykle{
     public MountainBike(int startCadence, int startSpeed, int startGear) {
         super(startCadence, startSpeed, startGear);
         hasDumper = true;
+        //name = "Rower gorski";
+        setName("Rower gorski");
     }
 
     @Override

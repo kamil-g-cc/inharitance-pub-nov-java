@@ -7,7 +7,10 @@ public class Main {
         MountainBike mountainBike = new MountainBike(90, 45, 5);
         TriathlonBike triathlonBike = new TriathlonBike(90, 55, 3);
         bicykle.go();
+        System.out.println(bicykle.getName());
         mountainBike.go();
+        System.out.println(mountainBike.getName());
         triathlonBike.go();
+        System.out.println(triathlonBike.getName());
     }
 }

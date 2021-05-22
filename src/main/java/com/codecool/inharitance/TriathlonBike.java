@@ -5,6 +5,7 @@ public class TriathlonBike extends Bicykle{
     public TriathlonBike(int startCadence, int startSpeed, int startGear) {
         super(startCadence, startSpeed, startGear);
         hasLemondka = true;
+        setName("Rower triathlonowy");
     }
 
     @Override
